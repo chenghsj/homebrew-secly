@@ -1,0 +1,29 @@
+name: Validate Tap
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  validate:
+    runs-on: macos-14
+    steps:
+      - name: Check out tap repository
+        uses: actions/checkout@v4
+
+      - name: Verify tap layout
+        run: |
+          test -f Formula/secly.rb
+          test -f README.md
+
+      - name: Check formula Ruby syntax
+        run: ruby -c Formula/secly.rb
+
+      - name: Check Homebrew formula style
+        env:
+          HOMEBREW_NO_ANALYTICS: 1
+          HOMEBREW_NO_AUTO_UPDATE: 1
+        run: brew style Formula/secly.rb
+
