@@ -3,7 +3,7 @@ class Secly < Formula
   homepage "https://github.com/chenghsj/secly"
   url "https://github.com/chenghsj/secly/releases/download/v0.1.2/secly-0.1.2-standalone.tar.gz"
   version "0.1.2"
-  sha256 "79cc73e8b57393f368c6ed0f268210a1dca0848a5005f65ee699b7f6e08b0a75"
+  sha256 "d3d3e51b5e35afb50981c1181b36370b579edd66888531080d1b0da61c0b7324"
 
   depends_on "gh"
   depends_on "node"
