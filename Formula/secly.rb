@@ -3,14 +3,18 @@ class Secly < Formula
   homepage "https://github.com/chenghsj/secly"
   url "https://github.com/chenghsj/secly/releases/download/v0.1.0/secly-0.1.0-standalone.tar.gz"
   version "0.1.0"
-  sha256 "85ebb0a241fbcab1e377c854229283e12afcf2f094e0851ac408612647d93eed"
+  sha256 "0a6cd0b1ab2d00599eb59827d7aa155832200a94bf3b1ee2070c295f0d931c6b"
 
   depends_on "gh"
   depends_on "node"
 
   def install
     libexec.install Dir["*"]
-    bin.install_symlink libexec/"bin/secly.mjs" => "secly"
+    (bin/"secly").write <<~EOS
+      #!/bin/bash
+      exec /usr/bin/env node "#{libexec}/bin/secly.mjs" "$@"
+    EOS
+    chmod 0755, bin/"secly"
   end
 
   test do
