@@ -34,5 +34,5 @@ After publishing a new Secly release artifact, regenerate the tap scaffold from 
 
 - Project: https://github.com/chenghsj/secly
 - Releases: https://github.com/chenghsj/secly/releases
-- Release artifact: secly-0.1.5-standalone.tar.gz
+- Release artifact: secly-0.1.6-standalone.tar.gz
 

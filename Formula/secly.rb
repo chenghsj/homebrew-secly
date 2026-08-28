@@ -1,9 +1,9 @@
 class Secly < Formula
   desc "Standalone local UI for managing GitHub repository variables"
   homepage "https://github.com/chenghsj/secly"
-  url "https://github.com/chenghsj/secly/releases/download/v0.1.5/secly-0.1.5-standalone.tar.gz"
-  version "0.1.5"
-  sha256 "5d3a104f5252fd766b9b8c641397d0bc41e19e06eb3b3a37993893d668a9a7b2"
+  url "https://github.com/chenghsj/secly/releases/download/v0.1.6/secly-0.1.6-standalone.tar.gz"
+  version "0.1.6"
+  sha256 "8500a9afdd898eedd57bb51b88b9e5a257adea6753ffe0fa7458dbc2d2a6e510"
 
   depends_on "gh"
   depends_on "node"
