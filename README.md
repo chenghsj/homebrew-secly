@@ -1,4 +1,4 @@
-# chenghsj/homebrew-secly
+# chenghsj/secly
 
 Official Homebrew tap for Secly.
 
@@ -7,7 +7,8 @@ This repository contains the Homebrew formula for installing Secly from the comm
 ## Install
 
 ```bash
-brew tap chenghsj/homebrew-secly
+brew tap chenghsj/secly
+brew trust chenghsj/secly
 brew install secly
 ```
 
@@ -34,5 +35,5 @@ After publishing a new Secly release artifact, regenerate the tap scaffold from 
 
 - Project: https://github.com/chenghsj/secly
 - Releases: https://github.com/chenghsj/secly/releases
-- Release artifact: secly-0.1.6-standalone.tar.gz
+- Release artifact: secly-0.1.7-standalone.tar.gz
 
